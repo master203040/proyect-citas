@@ -27,9 +27,9 @@ const Modal = ({isOpen, closeModal}) => {
                 </div>
 
                 <div className='buttons-modal'>
-                    <button onClick={closeModal}>Cancelar</button>
-                    <button>Editar</button>
-                    <button>Enviar</button>
+                    <a className='button-modal' onClick={closeModal}>Cancelar</a>
+                    <a className='button-modal' >Editar</a>
+                    <a className='button-modal' type='submit'>Enviar</a>
                 </div>
             </div>
         </div>
