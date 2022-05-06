@@ -85,10 +85,6 @@
   padding-bottom: 20px;
 }
 
-.info-form{
-
-}
-
 .buttons-modal{
   display: inline-flex;
   align-items: center;
@@ -109,10 +105,17 @@
     padding: 1.15rem 1.5rem;
     border-radius: 10px;
     transition: .3s;
-    box-shadow: 0 8px 15px rgb(232, 99, 10, .20);
+    box-shadow: 0 8px 15px rgb(232, 99, 10, .25);
 }
 
 .button-modal:hover{
     color: aliceblue;
     background-color: #E8630A;
+}
+
+.info-form{
+  background: inherit;
+  border: 0;
+  outline: 0;
+  text-align: center;
 }
