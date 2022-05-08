@@ -4,12 +4,15 @@ import Header from './components/Header';
 import Main from './components/Main';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [users, setUsers] = useState([]);
 
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Main
+        users={users}
+        setUsers={setUsers}
+      />
     </div>
   )
 }
