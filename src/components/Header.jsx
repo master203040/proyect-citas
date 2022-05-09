@@ -9,7 +9,7 @@ export const Header = () => {
       </div>
 
       <div>
-        <h1>srghrth</h1>
+        <h1>Emcabezado del trabajo</h1>
       </div>
     </div>
   )
