@@ -4,16 +4,16 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { DOCTORES } from '../constans'
 
-export const Main = ({ users, setUsers }) => {
-
+export const Main = ({setIsOpenModal, users, setUsers }) => {
+// validation
   const { register, handleSubmit, formState: { errors }, reset, trigger } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
-    setUsers([...users, data]);
+    /*console.log(data);*/
+    /*no se puede borrarsetUsers([...users, data]);*/
+    setUsers(data);
+    setIsOpenModal(true);
     reset();
   }
-
-
   return (
 
     <div className='padreMain'>
